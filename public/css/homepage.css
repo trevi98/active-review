@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "tajawal";
+}
+/* صورة الباك */
+body{
+    background-image: url(../uploads/back10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    /* بداية ال nav */
+header 
+{
+    width: auto;
+    overflow: auto;
+    margin-top: 2%;
+}
+.logo {
+    background-image: url("../uploads/logo1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 12vw;
+    top: 12vh ;
+    width: 14vw;
+    height: 50vh;
+    z-index: 1;
+}
+nav{
+    float: right;
+}
+nav ul {
+    width: 50vw;
+    overflow: auto;
+    /* height: 50vh; */
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 12vh 1vw;
+    padding-left: 5vw;
+
+}
+nav ul li :hover{
+    color: chartreuse;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding-top:50vh ;
+}
+/* نهاية ال nav  */
+/* h1 معروفة */
+h1{
+    padding-left: 12vw;
+    padding-top: 2vh;
+}
+/* تحت ال h1 */
+p{
+    margin-left: 13vw;
+    padding-top: 6vh;
+}
+/* زر الارسال */
+.input5 {
+    font-family: "tajawal";
+    background-color: #92030e;
+    /* box-shadow: 0px 1px 15.75px 5.25px rgba(0, 0, 0, 0.9); */
+    position: absolute;
+    border-radius: 2vw;
+    border: none;
+    left: 15vw;
+    top: 60vh;
+    width: 19vw;
+    height: 5.5vh;
+    z-index: 11;
+    color:rgb(252, 252, 252);
+    font-size: 2vw;
+}
+.input5:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+}
+/* المستطيل */
+.card {
+    background-color: #343383;
+    position: absolute;
+   box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+    left: 56vw;
+    top: 45vh;
+    width: 30vw;
+    height: 22.5vh;
+    z-index: 2;
+
+}
+/* النبزة فوق المستطيل */
+.upcard{
+    transform: rotate(45deg);
+    background-color: #343383;
+    position: absolute;
+    left: 67.8vw;
+    top: 48vh;
+    width: 10vw;
+    height: 10vh;
+    z-index: 0;
+}
+/* دائرة الصورة تعيت الافتار */
+.dot {
+    background-color: #fff;
+    box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 67vw;
+    top: -26.7vh;
+    height: 110px;
+    width: 110px;
+    z-index: 5;
+}
+/* الاسهم */
+.dot1 {
+    background-image: url("../uploads/dot1.png");
+    position: absolute;
+    left: 52vw;
+    top: 378px;
+    width: 44px;
+    height: 44px;
+    z-index: 6;
+}  
+/* الاسهم */
+.dot2 {
+    background-image: url("../uploads/dot2.png");
+    position: absolute;
+    left: 86.7vw;
+    top: 378px;
+    width: 44px;
+    height: 44px;
+    z-index: 5;
+}
+@media (max-width: 450px){
+    body{
+        background-image: url(../uploads/back4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header {
+        width: auto;
+        overflow: auto;
+        margin-top: 1%;
+    }
+    .logo {
+        background-image: url("../uploads/logo1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 12vw;
+        top: 14vh;
+        width: 19vw;
+        height: 50vh;
+        z-index: 1;
+    }
+    nav{
+        display: none;
+    }
+    h1{
+        padding-left: 25vw;
+        padding-top: 24vh;
+        font-size: 18px;
+    }
+
+
+}

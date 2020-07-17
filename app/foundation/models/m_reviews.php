@@ -8,11 +8,11 @@
         }
 
 
-        public function add_review(){
+        public function add_review($img){
 
             ///////////
-                $_POST['react']=1;
-                $_POST['avatar']=1;
+                // $_POST['react']=1;
+                // $_POST['avatar']=1;
             //////////
             $sql = "reviews (first_name,last_name,education,job_title,contry,star,react,comment,avatar)
                 VALUES (:first_name,:last_name,:education,:job_title,:contry,:star,:react,:comment,:avatar)
@@ -23,10 +23,10 @@
                 ":education" =>$_POST['education'],
                 ":job_title" =>$_POST['job_title'],
                 ":contry" =>$_POST['country'],
-                ":star" =>$_POST['star'],
-                ":react" =>$_POST['react'],
+                ":star" =>$_POST['star_count'],
+                ":react" =>$_POST['chosen_react'],
                 ":comment" =>$_POST['comment'],
-                ":avatar" =>$_POST['avatar']
+                ":avatar" =>$img
             ];
             $this->db->insert($sql,$array);
         }
@@ -104,10 +104,8 @@
         public function get_all_count(){
             $x = "count(id)";
             $sql = "reviews ";
-            $array=[
-                ":status" => 1
-            ];
-            return $this->db->select_spechial($x,$sql,$array,0);
+
+            return $this->db->select_spechial($x,$sql);
         }
         
 

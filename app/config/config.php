@@ -3,7 +3,7 @@
   define('URLROOT','/projects/activ/review');
   define('VERSION',1.0);
   define('SITENAME','Active-Reviews');
-  define('DB_HOST','localhost');
+  define('DB_HOST','localhost:9999');
   define('DB_NAME','active_reviews');
   define('DB_USER','root');
   define('DB_PASS','');

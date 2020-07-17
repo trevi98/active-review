@@ -55,11 +55,22 @@
             if(!isset($_SESSION['admin'])){
                 header("location:".URLROOT."/admin/login");
             }
-            $data = $this->reviews_model->show_all();
-            $data1 = $this->reviews_model->show_accepted();
-            $this->view("admin/dashboard");
+            $data = $this->reviews_model->get_all_count();
+            $data1 = $this->reviews_model->get_accepted_count();
+            $data2 = $this->reviews_model->show_all();
+            // $data1 = $this->reviews_model->show_accepted();
+            $this->view("admin/dashboard",$data,$data1,$data2);
             die();
 
+        }
+
+        public function show_review($id){
+            $data = $this->reviews_model->get_all_count();
+            $data1 = $this->reviews_model->get_accepted_count();
+            $data2 = $this->reviews_model->show_all();
+            $data3 = $this->reviews_model->show_review_admin($id);
+            $this->view("admin/show_review",$data,$data1,$data2,$data3);
+            die();
         }
 
 

@@ -1,0 +1,76 @@
+body{
+    background-image: url("../uploads/back10.jpg");
+}
+.logo {
+    background-image: url("../uploads/logo1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 47vw;
+    top: 13px;
+    width: 14vw;
+    height: 100px;
+    z-index: 1;
+}
+nav{
+    float: right;
+}
+nav ul {
+    width: 50vw;
+    overflow: auto;
+    /* height: 50vh; */
+    
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 12vh 1vw;
+    padding-left: 5vw;
+
+
+}
+nav ul li :hover{
+    color: chartreuse;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 15px;
+    padding-top:50vh ;
+}
+.card {
+    background-color: #343383;
+    position: absolute;
+   box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+    left: 32vw;
+    top: 258px;
+    width: 35vw;
+    height: 370px;
+    z-index: 2;
+    color: #ffffff;
+
+}
+/* النبزة فوق المستطيل */
+.upcard{
+    transform: rotate(45deg);
+    background-color: #343383;
+    position: absolute;
+    left: 46.8vw;
+    top: 283px;
+    width: 10vw;
+    height: 70px;
+    z-index: 0;
+}
+/* دائرة الصورة تعيت الافتار */
+.dot {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 45.6vw;
+    top: 113px;
+    height: 110px;
+    width: 110px;
+    z-index: 5;
+}

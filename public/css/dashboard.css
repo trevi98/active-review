@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'tajwan';
+    src: url('../uploads/Tajawal-Medium.ttf');
+}
+body{
+    background-color: #ddd;
+    font-family: 'tajwan';
+}
+*{
+    margin:0;
+    padding:0;
+}
+.big{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+}
+.yaser img{
+    width: 100%;
+}
+.yaser a{
+    color: #fff;
+    text-decoration: none;
+}
+.yaser{
+    /* padding-top: 100px; */
+    display: grid;
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* gap: 0px; */
+    grid-template-rows: 1fr 1fr 4fr;
+    background-color: cornflowerblue;
+    padding-left:10px;
+    width: 100px;
+
+
+}
+.main-right{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-row-gap: 0px;
+    width: 120%;
+}
+.main-right .foqani  .zz{
+    margin-left: 74px;
+}
+.main-right .foqani  p{
+    margin-top: 5px;
+    margin-left: 86px;
+}
+.main-right .foqani .in{
+    border: solid 2px black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-right .foqani{
+    background-color: #fff;
+    /* border-radius: 3%; */
+
+    width: 83%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 150px;
+}
+
+.main-right .foqani .all{
+    border:solid blue;
+}
+.main-right .foqani .accepted{
+    border:solid lightgreen;
+}
+.main-right .foqani .deleted{
+    border:solid red;
+}
+
+
+.main-right .westani{
+    /* background-color: darkblue; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 40px;
+}
+.main-right .westani div .list a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.main-right .westani div .list{
+    margin: 20px 0 0 100px;
+    width: 100%;
+}
+.main-right .westani .ysar{
+    background-color: #fff;
+    width: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 400px;
+    overflow-y: scroll;
+
+}
+.main-right .yamin a{
+    text-decoration: none;
+    color: #fff;
+    margin:10px 0 0 60px ;
+    background-color: #92030e;
+    width:90px;
+    display: inline-block;
+    height:24px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.main-right .yamin p{
+
+    margin:10px 0 0 60px ;
+}
+.main-right .yamin{
+    background-color: #fff;
+    height: 400px;
+    width: 376px;
+}
+
+.main-right .foqani ,.main-right .ysar , .main-right .yamin{
+    /* box-shadow: 1px 0px 13px 1px; */
+    box-shadow: 0px 5px 12px 5px rgba(0, 0, 0, 0.425);
+}
+
+.star{
+    display: inline-block;
+}
+#p5{
+    display: inline-block;
+}

@@ -5,7 +5,7 @@
 }
 /* صورة الباك */
 body{
-    background-image: url(../uploads/back10.jpg);
+    background-image: url(../uploads/back11.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -29,6 +29,8 @@ header
 }
 nav{
     float: right;
+    /* display: none; */
+    visibility: hidden;
 }
 nav ul {
     width: 50vw;
@@ -43,7 +45,7 @@ nav ul li {
 
 }
 nav ul li :hover{
-    color: chartreuse;
+    color: #92030fc4;
 }
 nav ul li a {
     text-decoration: none;
@@ -76,15 +78,15 @@ p{
     height: 5.5vh;
     z-index: 11;
     color:rgb(252, 252, 252);
-    font-size: 2vw;
+    font-size: 20px;
 }
 .input5:hover{
-    background-color: chartreuse;
     cursor: pointer;
+    background-color: #34338394;
 }
 /* المستطيل */
 .card {
-    background-color: #343383;
+    background-color: rgb(196, 196, 196);
     position: absolute;
    box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
     left: 56vw;
@@ -92,12 +94,22 @@ p{
     width: 30vw;
     height: 22.5vh;
     z-index: 2;
+    color: #000;
 
+}
+.card h4{
+    text-align: center;
+    padding-top: 10px;
+}
+.card .incardtext{
+    text-align: left;
+    margin: 0 8px;
+    padding-top: 2px;
 }
 /* النبزة فوق المستطيل */
 .upcard{
     transform: rotate(45deg);
-    background-color: #343383;
+    background-color:rgb(196, 196, 196);
     position: absolute;
     left: 67.8vw;
     top: 48vh;
@@ -117,6 +129,11 @@ p{
     height: 110px;
     width: 110px;
     z-index: 5;
+}
+.dot img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
 }
 /* الاسهم */
 .dot1 {
@@ -138,11 +155,42 @@ p{
     height: 44px;
     z-index: 5;
 }
-@media (max-width: 450px){
+
+
+.fa {
+    font-size: 25px;
+    position: relative;
+    /* box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425); */
+    left: 40%;
+    top: 115px;
+    /* height: 500px; */
+    z-index: 3;
+    /* background-color: black; */
+    /* size: 500px; */
+    /* border: solid #000; */
+}  
+
+.react img{
+
+    width: 25px;
+    height: 25px;
+}
+.react{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 92px;
+    left: 31%;
+}
+
+
+@media (max-width: 500px){
     body{
-        background-image: url(../uploads/back4.png);
-        background-size: cover;
+        background-image: url(../uploads/08.png);
+        /* background-size: cover; */
         background-repeat: no-repeat;
+        height: 200vh;
+        width: 100vw;
     }
     header {
         width: auto;
@@ -154,9 +202,9 @@ p{
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
-        left: 12vw;
-        top: 14vh;
-        width: 19vw;
+        left: 18vw;
+        top: 27vh;
+        width: 27vw;
         height: 50vh;
         z-index: 1;
     }
@@ -164,9 +212,99 @@ p{
         display: none;
     }
     h1{
-        padding-left: 25vw;
-        padding-top: 24vh;
-        font-size: 18px;
+        padding-left: 40vw;
+        padding-top: 42vh;
+        font-size: 17px;
+    }
+    p {
+        margin-left: 19vw;
+        padding-top: 7vh;
+    }
+    .dot {
+        background-color: #fff;
+        box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        left: 45vw;
+        top: 2.3vh;
+        height: 70px;
+        width: 70px;
+        z-index: 5;
+    }
+    .card {
+        background-color: #343383;
+        position: absolute;
+        box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+        left: 28vw;
+        top: 82vh;
+        width: 60vw;
+        height: 150px;
+        z-index: 2;
+        color: #fff;
+        font-size: 20px;
+    }
+    .upcard {
+        transform: rotate(45deg);
+        background-color: #343383;
+        position: absolute;
+        left: 48.8vw;
+        top: 81vh;
+        width: 10vw;
+        height: 10vh;
+        z-index: 0;
+    }
+    .dot1 {
+        background-image: url(../uploads/dot1.png);
+        position: absolute;
+        left: 19vw;
+        top: 356px;
+        width: 44px;
+        height: 44px;
+        z-index: 6;
+    }
+    .dot2 {
+        background-image: url(../uploads/dot2.png);
+        position: absolute;
+        left: 81.5vw;
+        top: 356px;
+        width: 44px;
+        height: 44px;
+        z-index: 5;
+    }
+    .input5 {
+        font-family: "tajawal";
+        background-color: #92030e;
+        /* box-shadow: 0px 1px 15.75px 5.25px rgba(0, 0, 0, 0.9); */
+        position: absolute;
+        border-radius: 2vw;
+        border: none;
+        left: 40vw;
+        top: 76vh;
+        width: 26vw;
+        height: 4.5vh;
+        z-index: 11;
+        color: rgb(252, 252, 252);
+        font-size: 20px;
+    }
+    .fa{
+        top:11px;
+        left:12vw;
+        height: 0px;
+        width: 4vw;
+    }
+    .dot img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }   
+    .react{
+        top: -10px;
+        left: 1vw
+    }
+    .react img {
+        width: 23px;
+        height: 20px;
     }
 
 

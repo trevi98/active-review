@@ -1,0 +1,533 @@
+body{
+    background-image: url("../uploads/back11.png");
+    background-repeat: no-repeat;   
+    background-size: cover;
+    width: 85vw;
+    height: 90vh;
+    font-family: "tajawal"; 
+    font-size: 13px;
+
+}
+.logo {
+    background-image: url("../uploads/logo1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 12vw;
+    top: 90px ;
+    width: 14vw;
+    height: 100px;
+    z-index: 1;
+}
+nav{
+    float: right;
+}
+nav ul {
+    width: 50vw;
+    overflow: auto;
+    /* height: 50vh; */
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 12vh 0vw;
+    padding-left: 2vw;
+
+}
+nav ul li :hover{
+    color: chartreuse;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    padding-top:36vh ;
+    padding-left: 7vw;
+}
+.p1{
+    font-size: 20px;
+    position: relative;
+    left: 12vw;
+    top: 200px;
+    color:#000;
+}
+.input1{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 5px 6px 2.5px rgba(0, 0, 0, 0.315);
+    position: absolute;
+    border: none;
+    left: 12vw;
+    top: 245px;
+    width: 17vw;
+    height: 25px;
+    z-index: 10;
+    color: black;
+    font-size:18px;
+
+    
+}
+.p2{
+    font-size: 20px;
+    position: relative;
+    left: 12vw;
+    top: 225px;
+    color:#000;
+}
+.input2{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 5px 6px 2.5px rgba(0, 0, 0, 0.315);
+    position: absolute;
+    border: none;
+    left: 12vw;
+    top: 315px;
+    width: 17vw;
+    height: 25px;
+    color: black;
+    font-size:18px;
+
+    
+}
+.p3{
+    font-size: 20px;
+    position: relative;
+    left: 12vw;
+    top: 255px;
+    color:#000;
+}
+.input3{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 5px 6px 2.5px rgba(0, 0, 0, 0.315);
+    position: absolute;
+    border: none;
+    left: 12vw;
+    top: 386px;
+    width: 17vw;
+    height: 25px;
+    color: black;
+    font-size:18px;
+
+    
+}
+.p4{
+    font-size: 20px;
+    position: relative;
+    left: 12vw;
+    top: 285px;
+    color:#000;
+}
+.input4{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 5px 6px 2.5px rgba(0, 0, 0, 0.315);
+
+    position: absolute;
+    /* border: 1px solid #000000; */
+    border: none;
+    left: 12vw;
+    top: 460px;
+    width: 17vw;
+    height: 25px;
+    color: black;
+    font-size: 18px;
+    
+}
+.p5{
+    font-size: 20px;
+    position: relative;
+    left: 56vw;
+    top: -30px;
+    display: inline;
+    color:#000;
+}
+.input5{
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+    border: none;
+    left: 56vw;
+    top: 200px;
+    width: 30vw;
+    height: 150px;
+    z-index: 2;
+    color: black;
+    font-size:18px;
+
+    
+}
+.input9{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0px 5px 6px 2.5px rgba(0, 0, 0, 0.315);
+    position: absolute;
+    border: none;
+    left: 12vw;
+    top: 530px;
+    width: 17vw;
+    height: 25px;
+    color: black;
+    font-size:18px;
+
+    
+}
+
+/* .upcard{
+    transform: rotate(45deg);
+    background-color: #343383;
+    position: absolute;
+    left: 69.9vw;
+    top: 292px;
+    width: 5vw;
+    height: 50px;
+    z-index: 0;
+}
+.dot {
+    background-color: #fff;
+    box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 67vw;
+    top: -90px;
+    height: 110px;
+    width: 110px;
+    z-index: 5;
+} */
+.fa {
+    font-size: 25px;
+    position: relative;
+    left: 73vw;
+    top: 79px;
+    /* height: 500px; */
+    z-index: 3;
+    /* background-color: black; */
+    /* size: 500px; */
+}  
+.fa:hover{
+    cursor: pointer;
+}
+.checked {
+    color: rgb(0, 0, 0);
+}
+.checked:hover{
+    cursor: pointer;
+}
+.input6:hover{
+    cursor: pointer;
+    background-color: #34338394;
+}
+/* .checked:hover{
+    color: #fdce04;
+
+} */
+.input8{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top:161px;
+    left:82vw;
+    background-color: #343383;
+    background-image: url("../uploads/plus-sign-vector-15.png");
+    /* visibility: hidden; */
+    opacity: 0;
+    z-index: 90;
+}
+.input8:hover{
+    cursor: pointer;
+}
+.covering img{
+    width:50px;
+    height: 50px;
+}
+.covering{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top:211px;
+    left:82vw;
+    background-color: #343383;
+    /* background-image: url("../uploads/plus-sign-vector-15.png"); */
+    z-index: 89;
+    border-radius: 50%;
+}
+.avatar-dad{
+    top: -41px;
+    display: inline;
+    position: relative;
+}
+
+.avatar {
+    vertical-align: middle;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 58vw;
+    top: 97px;
+    /* background-color: rgb(63, 73, 90); */
+}
+.avatar:hover{
+    cursor: pointer;
+}
+.avatar1 {
+    vertical-align: middle;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 58vw;
+    top: 100px;
+    /* background-color: rgb(63, 73, 90); */
+}
+.avatar1:hover{
+    cursor: pointer;
+}
+.input6 {
+    font-family: "tajawal";
+    background-color: rgb(196, 196, 196);
+    /* box-shadow: 0px 1px 15.75px 5.25px rgba(0, 0, 0, 0.9); */
+    position: relative;
+    border-radius: 2vw;
+    border: none;
+    left: 55vw;
+    top: 350px;
+    width: 19vw;
+    height: 5.5vh;
+    z-index: 50;
+    color:#000;
+    font-size: 2vw;
+}
+.like{
+    /* background-color: lightgreen; */
+    background-image: url(../uploads/facebook-reaction-like.svg);
+    position: relative;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    left: 70vw;
+    top: 56px;
+}
+.like:hover{
+    cursor: pointer;
+}
+/* } */
+.hidden_feilds{
+    display: none;
+}
+/* .like .reacts img::after{
+    content: attr(title);
+    background-color: black;
+    color: #fff;
+    position: relative;
+    height: 10px;
+    width: 10px;
+} */
+.like .reacts img:hover{
+    height: 35px;
+    width: 45px;
+}
+.like .reacts img{
+    height: 30px;
+    width: 40px;
+    top: 5px;
+    padding: 5px 4px;
+    background-color: #fff;
+    border-radius: 10%;
+
+    
+}
+/* .like .reacts{ */
+.like .reacts .care:hover{
+    width: 65px;
+}
+/* .like .reacts .care{
+    width: 60px;
+    padding: 0;
+} */
+.like .reacts{
+    position: relative;
+    top:-44px;
+    left:-86px;
+    height: 40px;
+    width: 218px;
+    /* border-radius: 20%; */
+    /* background-color: #fff; */
+}
+@media (max-width: 900px){
+    body{
+    background-image: url(../uploads/08.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100vw;
+}
+    nav{
+        display: none;
+    }
+    .logo{
+        background-repeat: no-repeat;
+        left: 17vw;
+        top: 25vh;
+        width: 31vw;
+        height: 11vh;
+    }
+    .p1{
+        font-size: 20px;
+        position: relative;
+        left: 50vw;
+        top: 135px;
+       
+    }
+    .input1{
+        left: 52vw;
+        top: 188px;
+        width: 45vw;
+        height: 25px;
+        z-index: 10;
+    }
+    .p2{
+        font-size: 20px;
+        position: relative;
+        left: 50vw;
+        top: 167px;
+      
+    }
+    .input2{
+        left: 52vw;
+        top: 256px;
+        width: 45vw;
+        height: 25px;
+    }
+    .p3{
+        font-size: 20px;
+        position: relative;
+        left: 50vw;
+        top: 195px;
+    
+    }
+    .input3{
+        left: 52vw;
+        top: 330px;
+        width: 45vw;
+        height: 25px;
+    }
+    .p4{
+        font-size: 20px;
+        position: relative;
+        left: 50vw;
+        top: 230px;
+       
+    }
+    .input4{
+        left: 52vw;
+        top: 410px;
+        width: 45vw;
+        height: 25px;
+    }
+    .p5{
+        font-size: 20px;
+        position: relative;
+        left: 50vw;
+        top: 323px;
+        display: inline;
+        
+    }
+    .input5{
+        box-shadow: 0px 10px 12px 5px rgba(0, 0, 0, 0.425);
+        border: none;
+        left: 50vw;
+        top: 545px;
+         width: 65vw;
+        height: 90px;
+        z-index: 2;
+        
+    }
+    .input9{
+        left: 52vw;
+        top: 473px;
+        width: 45vw;
+        height: 25px;
+    }
+    .avatar {
+        vertical-align: middle;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        left: 50vw;
+        top: 422px;
+        background-color: rgb(63, 73, 90);
+    }
+    .avatar1 {
+        vertical-align: middle;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        left: 50vw;
+        top: 428px;
+        background-color: rgb(63, 73, 90); 
+    }
+    .covering{
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top:448px;
+        left:95vw;
+        background-color: #343383;
+        /* background-image: url("../uploads/plus-sign-vector-15.png"); */
+        z-index: 89;
+        border-radius: 50%;
+    }
+    .covering img{
+        width:20px;
+        height: 20px;
+    }
+    .input8 {
+        height: 22px;
+        width: 22px;
+        position: relative;
+        top: 425px;
+        left: 95vw;
+        background-color: #343383;
+        background-image: url(../uploads/plus-sign-vector-15.png);
+        /* visibility: hidden; */
+        opacity: 0;
+        z-index: 90;
+    }
+    .fa {
+        font-size: 25px;
+        position: relative;
+        left: 65vw;
+        top: 406px;
+        /* height: 500px; */
+        z-index: 3;
+        /* background-color: black; */
+        /* size: 500px;*/
+    }
+    .like {
+        /* background-color: lightgreen; */
+        background-image: url(../uploads/facebook-reaction-like.svg);
+        position: relative;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        left: 54vw;
+        top: 385px;
+    }
+    .input6 {
+        font-family: "tajawal";
+        background-color: #92030e;
+        /* box-shadow: 0px 1px 15.75px 5.25px rgba(0, 0, 0, 0.9); */
+        position: relative;
+        border-radius: 2vw;
+        border: none;
+        left: 47vw;
+        top: 547px;
+        width: 61vw;
+        height: 5.5vh;
+        z-index: 50;
+        color: rgb(252, 252, 252);
+        font-size: 18px;
+    }
+
+
+    
+}

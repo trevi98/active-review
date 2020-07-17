@@ -1,85 +1,48 @@
-
-
-
-<main>
-    <div class="form">
-        <form action="<?php echo URLROOT;?>/reviews/store" method="post">
-            <input type="text" name="first_name" id="" placeholder="first name">
-            <br>
-            <input type="text" name="last_name" id="" placeholder="last name">
-            <br>
-            <input type="text" name="education" id="" placeholder="education">
-            <br>
-            <input type="text" name="job_title" id="" placeholder="job title">
-            <br>
-
-            <select id="country" name="country">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Serveices</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="logo"></div>
+    <form action="<?php echo URLROOT;?>/reviews/store" method="POST" enctype="multipart/form-data">
+                <p class="p1">First Name</p>
+                <input type="text" name="first_name" id="" class="input1">
+                <p class="p2">Last Name</p>
+                <input type="text" name="last_name" id="" class="input2">
+                <p class="p3">Education</p>
+                <input type="text" name="education" id="" class="input3">
+                <p class="p4">Job Title</p>
+                <input type="text" name="job_title" id="" class="input4">
+                <p class="p5">Enter your reviwe</p>
+                <textarea name="comment" id="" cols="30" rows="10" class="input5"></textarea>
+                <button type="submit" name="submit" class="input6">Submit Your Review</button>
+                <div class="covering"><img src="../public/uploads/plus-sign-vector-15.png" alt=""></div>
+                <input type="file" name="img" id="" class="input8" >
+                <input type="text" name="star_count"  value="0" class="hidden_feilds" id="star">
+                <input type="text" name="chosen_avatar"  value="none" class="hidden_feilds"id="avatar">
+                <input type="text" name="chosen_react"  value="none" class="hidden_feilds"id="chosen_react">
+            <select id="country" name="country" class="input9" >
                 <option value="Afganistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
                 <option value="American Samoa">American Samoa</option>
-                <option value="Andorra">Andorra</option>
-                <option value="Angola">Angola</option>
-                <option value="Anguilla">Anguilla</option>
-                <option value="Antigua & Barbuda">Antigua & Barbuda</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Armenia">Armenia</option>
-                <option value="Aruba">Aruba</option>
-                <option value="Australia">Australia</option>
-                <option value="Austria">Austria</option>
-                <option value="Azerbaijan">Azerbaijan</option>
-                <option value="Bahamas">Bahamas</option>
-                <option value="Bahrain">Bahrain</option>
-                <option value="Bangladesh">Bangladesh</option>
-                <option value="Barbados">Barbados</option>
-                <option value="Belarus">Belarus</option>
-                <option value="Belgium">Belgium</option>
-                <option value="Belize">Belize</option>
-                <option value="Benin">Benin</option>
-                <option value="Bermuda">Bermuda</option>
-                <option value="Bhutan">Bhutan</option>
-                <option value="Bolivia">Bolivia</option>
-                <option value="Bonaire">Bonaire</option>
-                <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
-                <option value="Botswana">Botswana</option>
-                <option value="Brazil">Brazil</option>
-                <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
-                <option value="Brunei">Brunei</option>
-                <option value="Bulgaria">Bulgaria</option>
-                <option value="Burkina Faso">Burkina Faso</option>
-                <option value="Burundi">Burundi</option>
-                <option value="Cambodia">Cambodia</option>
-                <option value="Cameroon">Cameroon</option>
-                <option value="Canada">Canada</option>
-                <option value="Canary Islands">Canary Islands</option>
-                <option value="Cape Verde">Cape Verde</option>
-                <option value="Cayman Islands">Cayman Islands</option>
-                <option value="Central African Republic">Central African Republic</option>
-                <option value="Chad">Chad</option>
-                <option value="Channel Islands">Channel Islands</option>
-                <option value="Chile">Chile</option>
-                <option value="China">China</option>
-                <option value="Christmas Island">Christmas Island</option>
-                <option value="Cocos Island">Cocos Island</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Comoros">Comoros</option>
-                <option value="Congo">Congo</option>
-                <option value="Cook Islands">Cook Islands</option>
-                <option value="Costa Rica">Costa Rica</option>
-                <option value="Cote DIvoire">Cote DIvoire</option>
-                <option value="Croatia">Croatia</option>
-                <option value="Cuba">Cuba</option>
-                <option value="Curaco">Curacao</option>
-                <option value="Cyprus">Cyprus</option>
-                <option value="Czech Republic">Czech Republic</option>
-                <option value="Denmark">Denmark</option>
-                <option value="Djibouti">Djibouti</option>
-                <option value="Dominica">Dominica</option>
-                <option value="Dominican Republic">Dominican Republic</option>
-                <option value="East Timor">East Timor</option>
-                <option value="Ecuador">Ecuador</option>
-                <option value="Egypt">Egypt</option>
-                <option value="El Salvador">El Salvador</option>
                 <option value="Equatorial Guinea">Equatorial Guinea</option>
                 <option value="Eritrea">Eritrea</option>
                 <option value="Estonia">Estonia</option>
@@ -262,27 +225,53 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             
             </select>
-            <br>
-
-            <select name="star" id="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <select name="react" id="">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <br>
-            <textarea name="comment" id="" cols="30" rows="10">review</textarea>
-            <br>
-            <button type="submit" name="submit">Submit Review</button>
-
-        </form>
+</form>
+    <div class="upcard">
     </div>
-</main>
+    <div class="dot"></div>
+    <div class="avatar-dad">
+
+        <img src="../public/uploads/avatar1.svg" alt="Avatar" class="avatar common_avatar"id="a1">
+        <img src="../public/uploads/avatar2.svg" alt="Avatar" class="avatar common_avatar"id="a2">
+        <img src="../public/uploads/avatar3.svg" alt="Avatar" class="avatar common_avatar"id="a3">
+        <img src="../public/uploads/avatar4.svg" alt="Avatar" class="avatar common_avatar"id="a4">
+        <img src="../public/uploads/avatar5.svg" alt="Avatar" class="avatar common_avatar"id="a5">
+        <img src="../public/uploads/avatar6.svg" alt="Avatar" class="avatar common_avatar"id="a6"><br>
+        <img src="../public/uploads/avatar01.svg" alt="Avatar" class="avatar1 common_avatar"id="a7">
+        <img src="../public/uploads/avatar02.svg" alt="Avatar" class="avatar1 common_avatar"id="a8">
+        <img src="../public/uploads/avatar03.svg" alt="Avatar" class="avatar1 common_avatar"id="a9">
+        <img src="../public/uploads/avatar04.svg" alt="Avatar" class="avatar1 common_avatar"id="a10">
+        <img src="../public/uploads/avatar05.svg" alt="Avatar" class="avatar1 common_avatar"id="a11">
+        <img src="../public/uploads/avatar06.svg" alt="Avatar" class="avatar1 common_avatar"id="a12">
+    </div>
+
+
+    
+    <div class="smaall"></div>
+    <!-- <p class="sas">Star Rating</p> -->
+    <div class="rate">
+        <div class="star">
+   
+            <span class="fa fa-star checked" id="s1"></span>
+            <span class="fa fa-star checked" id="s2"></span>
+            <span class="fa fa-star checked" id="s3"></span>
+            <span class="fa fa-star checked" id="s4"></span>
+            <span class="fa fa-star checked" id="s5"></span>
+        </div>
+       
+       <div class="like">
+           <!-- <img src="" alt=""> -->
+            <div class="reacts" style="display:none;">
+                <img src="../public/uploads/care.png" alt="" class="care common_react" title="care" id="1" >
+                <img src="../public/uploads/love.png" alt="" title="love" id="2" class="common_react">
+                <img src="../public/uploads/happy.png" alt="" title="happy" id="3" class="common_react">
+                <img src="../public/uploads/like-logo.png" alt=""title="like" id="4" class="common_react">
+            </div>
+       </div>
+     
+
+    </div>
+    <script src="../public/js/form.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
